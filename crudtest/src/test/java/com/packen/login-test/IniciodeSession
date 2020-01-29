@@ -1,0 +1,16 @@
+Feature: En este feature encontrara escenarios que probaran la funcinalidad del login de la app de Angular test
+
+
+  Scenario Outline: Se Probara el inicio de session
+
+    Given Se inicio el navegador
+    And   La aplicacion esta desplegada en la "<URL>"
+    When  Se navego a la aplicacion
+    And   Se ingreso el "<nombre>" y el "<apellido>"
+    And   Se dio click en el boton de Login
+    Then  Se inicio session exitosamente
+
+    Examples:
+      | nombre | apellido | URL                    |
+      | daniel | achury   | http://localhost:4200/ |
+
